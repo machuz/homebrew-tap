@@ -11,7 +11,7 @@ class Eis < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/machuz/engineering-impact-score/releases/download/v0.6.0/eis_darwin_amd64.tar.gz"
-      sha256 "f95f49cd0897fb2afbaafc47252b947396d52f347358153e011578610139ef64"
+      sha256 "ad1d8883e543d8307d6a9f63ea8d0587d58eac21cafa027772c1f27cddc7b1bd"
 
       define_method(:install) do
         bin.install "eis"
@@ -19,7 +19,7 @@ class Eis < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/machuz/engineering-impact-score/releases/download/v0.6.0/eis_darwin_arm64.tar.gz"
-      sha256 "c97243dc56f58c233ffd6fe56713aaf59c37ca4f0ce0c49eeb1437cdbe53a9d2"
+      sha256 "1c73a001e3dbe7605c106383f56edab5202f25ace9b6c10c0749e3f51f23eedd"
 
       define_method(:install) do
         bin.install "eis"
@@ -30,14 +30,14 @@ class Eis < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/machuz/engineering-impact-score/releases/download/v0.6.0/eis_linux_amd64.tar.gz"
-      sha256 "64be2789798884c065869249a8552165354602410c077f650b0050ae71f8767e"
+      sha256 "a4eea335203eefe6b6bd2593e347c6189dbb84272ddd786f193592b07f99cf09"
       define_method(:install) do
         bin.install "eis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/machuz/engineering-impact-score/releases/download/v0.6.0/eis_linux_arm64.tar.gz"
-      sha256 "57bc2042943acdd846eab41cf3ebbb7d77c66aabcc0325cd7a7f78653b95d52d"
+      sha256 "a61ed4a1f9b049a20e49b7731591e714cae6c3dce4cc447bcde90a463afe6479"
       define_method(:install) do
         bin.install "eis"
       end
