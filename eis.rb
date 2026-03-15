@@ -5,21 +5,21 @@
 class Eis < Formula
   desc "Quantify engineer impact from git history alone — 7-axis scoring CLI"
   homepage "https://github.com/machuz/engineering-impact-score"
-  version "0.12.1"
+  version "0.12.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/machuz/engineering-impact-score/releases/download/v0.12.1/eis_darwin_amd64.tar.gz"
-      sha256 "64e2a1c80b6b39927b0f418e49c78dd939c7f5553344e89f8f80aeb321e4b1d9"
+      url "https://github.com/machuz/engineering-impact-score/releases/download/v0.12.2/eis_darwin_amd64.tar.gz"
+      sha256 "aee0b5befde75ab3514265d3195f66dfac9787fedba4656f05850aa25c74e724"
 
       define_method(:install) do
         bin.install "eis"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/machuz/engineering-impact-score/releases/download/v0.12.1/eis_darwin_arm64.tar.gz"
-      sha256 "fb0d2ebfd5bbfb793aa43f3a678c581e7c41f857779242c02db0cda50114781b"
+      url "https://github.com/machuz/engineering-impact-score/releases/download/v0.12.2/eis_darwin_arm64.tar.gz"
+      sha256 "cedbabc33784c036651880b17b99c802d29b5852804ac567a4227f596095cede"
 
       define_method(:install) do
         bin.install "eis"
@@ -29,15 +29,15 @@ class Eis < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/machuz/engineering-impact-score/releases/download/v0.12.1/eis_linux_amd64.tar.gz"
-      sha256 "0f0ffe0ad3dd60a494830b53279158a492fd6fce8ad88b342f71115f52f7399f"
+      url "https://github.com/machuz/engineering-impact-score/releases/download/v0.12.2/eis_linux_amd64.tar.gz"
+      sha256 "32a15825c44e295b6175ff4dacd13beced7f1b4e84b32f83a0f7913bf86c5872"
       define_method(:install) do
         bin.install "eis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/machuz/engineering-impact-score/releases/download/v0.12.1/eis_linux_arm64.tar.gz"
-      sha256 "473b73ae4b4c9de383645100fd376c18bea9f98e76978292767e0e89da9d09e9"
+      url "https://github.com/machuz/engineering-impact-score/releases/download/v0.12.2/eis_linux_arm64.tar.gz"
+      sha256 "616b5b3073b859463501849036e2dda7cd96046dd83c1c8a1a9236f8b3e01101"
       define_method(:install) do
         bin.install "eis"
       end
