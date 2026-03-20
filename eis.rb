@@ -5,21 +5,21 @@
 class Eis < Formula
   desc "Quantify engineer impact from git history alone — 7-axis observation CLI"
   homepage "https://github.com/machuz/eis"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/machuz/eis/releases/download/v1.2.0/eis_darwin_amd64.tar.gz"
-      sha256 "16bf374ab63dd935c2db8aafe37e1d8ea7e7999dc0756472e7f5e6f3d3e61bcd"
+      url "https://github.com/machuz/eis/releases/download/v1.2.1/eis_darwin_amd64.tar.gz"
+      sha256 "3076c3b37dc9bd99b6a3feb6014cfa1001b08124e3fd880b71facc14016004a1"
 
       define_method(:install) do
         bin.install "eis"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/machuz/eis/releases/download/v1.2.0/eis_darwin_arm64.tar.gz"
-      sha256 "eab5ad79422b295ec015a4541053998b52b56f5abad719bb933748ecf3f5f7fa"
+      url "https://github.com/machuz/eis/releases/download/v1.2.1/eis_darwin_arm64.tar.gz"
+      sha256 "1d4ff4f7d5d4623e416e182e6619edcfc1143dab35011fe6e7e54253a0d7fed9"
 
       define_method(:install) do
         bin.install "eis"
@@ -29,15 +29,15 @@ class Eis < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/machuz/eis/releases/download/v1.2.0/eis_linux_amd64.tar.gz"
-      sha256 "167b53e9f7ba77fae2f1ec7686536608d1150480ddd476007dcbadab8c9debe4"
+      url "https://github.com/machuz/eis/releases/download/v1.2.1/eis_linux_amd64.tar.gz"
+      sha256 "8d83473e95d593bd21ca4a3d98616ae459e617ab5dab630f189e98bbceb38bf8"
       define_method(:install) do
         bin.install "eis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/machuz/eis/releases/download/v1.2.0/eis_linux_arm64.tar.gz"
-      sha256 "f9c28bb5552c8698768c25975b8bb711bea0ccac6ad9b0a29634e73e2df0d0e9"
+      url "https://github.com/machuz/eis/releases/download/v1.2.1/eis_linux_arm64.tar.gz"
+      sha256 "48ca502e276b06e8127caa081edbf287c1f4ae2452030c85419a1c50c0e1fc95"
       define_method(:install) do
         bin.install "eis"
       end
